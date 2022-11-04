@@ -11,7 +11,7 @@ DATE_COLUMN = 'date/time'
 
 DATA_URL='subconjunto2.csv'
 
-@st.cache
+#@st.cache
 
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
