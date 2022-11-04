@@ -27,8 +27,9 @@ data = load_data(10000)
 data_load_state.text("Done! (using st.cache)")
 
 
-st.subheader('Raw data')
-st.write(data)
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(data)
 
 st.subheader('Number of pickups by hour')
 hist_values = np.histogram(
