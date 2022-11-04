@@ -12,6 +12,7 @@ DATE_COLUMN = 'date/time'
 DATA_URL='subconjunto2.csv'
 
 #@st.cache
+@st.cache(ttl=60) #ttl (float or None) – The maximum number of seconds to keep an entry in the cache, or None if cache entries should not expire. The default is None.
 
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
