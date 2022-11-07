@@ -9,7 +9,7 @@ DATE_COLUMN = 'date/time'
 #DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
 #         'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
 
-DATA_URL='subconjunto2.csv'
+DATA_URL='subconjunto1.csv'
 
 #@st.cache
 @st.cache(ttl=60) #ttl (float or None) – The maximum number of seconds to keep an entry in the cache, or None if cache entries should not expire. The default is None.
