@@ -15,6 +15,8 @@ st.set_page_config(
 # read csv from a github repo
 dataset_url = "https://raw.githubusercontent.com/Lexie88rus/bank-marketing-analysis/master/bank.csv"
 
+DATA_URL='subconjunto1.csv'
+
 # read csv from a URL
 @st.experimental_memo
 def get_data() -> pd.DataFrame:
