@@ -1,6 +1,7 @@
 
 import streamlit as st
-from persist import persist, load_widget_state
+#from persist import persist, load_widget_state
+import persist, load_widget_state
 
 
 def main():
