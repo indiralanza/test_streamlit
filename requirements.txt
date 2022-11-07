@@ -1,0 +1,9 @@
+numpy
+pandas
+streamlit
+plotly
+
+
+
+# [-e] git+https://github.com/openlegaldata/oldp-sdk-python.git#egg=oldp-api
+# -e https://github.com/openlegaldata/oldp-sdk-python.git#egg=oldp-api
