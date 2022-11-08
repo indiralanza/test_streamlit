@@ -1,7 +1,7 @@
 
 import streamlit as st
 #from persist import persist, load_widget_state
-import persist
+from siblingModule import *
 
 def main():
     if "page" not in st.session_state:
@@ -60,5 +60,5 @@ PAGES = {
 
 
 if __name__ == "__main__":
-    persist.load_widget_state()
+    load_widget_state()
     main()
