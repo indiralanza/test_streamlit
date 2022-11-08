@@ -6,15 +6,17 @@ import pandas as pd  # read csv, df manipulation
 import plotly.express as px  # interactive charts
 import streamlit as st  # 🎈 data web app development
 
-#probando el valor de session state caputada en la main page
-st.write(st.session_state["shared"])
-# If page1 already executed, this should write True
+
 
 st.set_page_config(
     page_title="Real-Time Data Science Dashboard",
     page_icon="✅",
     layout="wide",
 )
+
+#probando el valor de session state caputada en la main page
+st.write(st.session_state["shared"])
+# If page1 already executed, this should write True
 
 # read csv from a github repo
 dataset_url = "https://raw.githubusercontent.com/Lexie88rus/bank-marketing-analysis/master/bank.csv"
