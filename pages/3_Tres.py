@@ -1,7 +1,7 @@
 
 import streamlit as st
-from persist import persist, load_widget_state
-
+#from persist import persist, load_widget_state
+import persist
 
 def main():
     if "page" not in st.session_state:
