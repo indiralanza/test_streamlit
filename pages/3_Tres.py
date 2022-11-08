@@ -60,5 +60,5 @@ PAGES = {
 
 
 if __name__ == "__main__":
-    load_widget_state()
+    persist.load_widget_state()
     main()
