@@ -4,6 +4,10 @@ import numpy as np
 
 st.title('Uber pickups in NYC')
 
+#probando compartir variables entre paginas, comprobar en la pagina 2 el valor de la key shared
+if "shared" not in st.session_state:
+   st.session_state["shared"] = True 
+
 
 DATE_COLUMN = 'date/time'
 #DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
