@@ -39,4 +39,23 @@ with st.form("my_form"):
 st.write("Outside the form")
 
 
+#Testing expander
+expander = st.expander("See explanation")
+expander.write("""
+    The chart above shows some numbers I picked for you.
+    I rolled actual dice for these, so they're *guaranteed* to
+    be random.
+""")
 
+
+""" 
+#Otra forma de hcer lo de arriba
+with st.expander("See explanation"):
+    st.write("""
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    """)
+    st.image("https://static.streamlit.io/examples/dice.jpg")
+"""
+expander.image("https://static.streamlit.io/examples/dice.jpg")
