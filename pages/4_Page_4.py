@@ -18,15 +18,22 @@ with col1:
 
 with col2:
     with st.form('Form2'):
-        st.selectbox('Select Topping', ['Almonds', 'Sprinkles'], key=2)
-        st.slider(label='Select Intensity', min_value=0, max_value=100, key=3)
+        selectbox=st.selectbox('Select Topping', ['Almonds', 'Sprinkles'], key=2)
+        slider=st.slider(label='Select Intensity', min_value=0, max_value=100, key=3)
         submitted2 = st.form_submit_button('Submit 2')
+        if submitted2:
+            st.write(selectbox, slider)
 
 st.text(number)
 
-form = st.form("my_form")
-form.slider("Inside the form")
-st.slider("Outside the form")
+with st.form("my_form"):
+   st.write("Inside the form")
+   slider_val = st.slider("Form slider")
+   checkbox_val = st.checkbox("Form checkbox")
 
-# Now add a submit button to the form:
-form.form_submit_button("Submit")
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("slider", slider_val, "checkbox", checkbox_val)
+
+st.write("Outside the form")
