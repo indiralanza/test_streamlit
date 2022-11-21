@@ -39,4 +39,4 @@ with st.form("my_form"):
 st.write("Outside the form")
 
 
-file_expander = st.sidebar.beta_expander(‘Expander Title’)
+file_expander = st.sidebar.beta_expander('Expander Title')
