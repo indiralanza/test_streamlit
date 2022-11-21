@@ -24,10 +24,14 @@ with col2:
 
 st.text(number)
 
-st.markdown("Columns inside form")
+with st.form("my_form"):
+   st.write("Inside the form")
+   slider_val = st.slider("Form slider")
+   checkbox_val = st.checkbox("Form checkbox")
 
-with st.form(key='columns_in_form'):
-    cols = st.columns(5)
-    for i, col in enumerate(cols):
-        col.selectbox(f'Make a Selection', ['click', 'or click'], key=i)
-    submitted = st.form_submit_button('Submit')
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("slider", slider_val, "checkbox", checkbox_val)
+
+st.write("Outside the form")
